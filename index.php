@@ -18,7 +18,7 @@
  	</div>
  	<div class="container" align="center" >
 		<table>
-			<theader>
+			<theader>				
 				<td>icono</td>
 				<td>Codigo</td>
 				<td>Nombre</td>
@@ -41,7 +41,7 @@
 				if ($result->num_rows > 0) {
 					while($row = $result->fetch_assoc()) {?>
 					<?php echo "<tr>"; ?>				
-					<?php echo "<td>", $row['imegen_servicio'], "</td>"; ?>
+					<?php echo "<td><img src=\"../", $row['imagen_servicio'], "\" /></td>"; ?>
 					<?php echo "<td>", $row['codigo_servicio'], "</td>"; ?>
 					<?php echo "<td>", $row['nombre_servicio'], "</td>"; ?>
 					<?php echo "<td>", $row['descripcion_servicio'], "</td>"; ?>
